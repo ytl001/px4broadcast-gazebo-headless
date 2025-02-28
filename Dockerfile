@@ -45,7 +45,7 @@ RUN pip3 install --upgrade pip && \
                  toml \
                  pyyaml
 
-RUN git clone https://github.com/ytl001/PX4broadcast-Autopilot.git ${FIRMWARE_DIR}
+RUN git clone https://github.com/ytl001/PX4broadcast.git ${FIRMWARE_DIR}
 RUN git -C ${FIRMWARE_DIR} checkout main
 RUN git -C ${FIRMWARE_DIR} submodule update --init --recursive
 
