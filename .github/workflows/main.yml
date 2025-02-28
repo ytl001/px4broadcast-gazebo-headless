@@ -35,7 +35,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            jonasvautherin/px4-gazebo-headless
+            ytl001/px4broadcast-gazebo-headless
           # Configure tags:
           #   `master` branch -> `latest`
           #   `v{xx.yy.zz}` tag -> `{xx.yy.zz}`
