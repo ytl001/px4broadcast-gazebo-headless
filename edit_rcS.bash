@@ -55,5 +55,5 @@ fi
 
 CONFIG_FILE=${FIRMWARE_DIR}/build/px4_sitl_default/etc/init.d-posix/px4-rc.mavlink
 
-sed -i "s/mavlink start \-x \-u \$udp_gcs_port_local -r 4000000 -f -p/mavlink start -x -u \$udp_gcs_port_local -r -f -p 4000000 ${QGC_PARAM}/" ${CONFIG_FILE}
+sed -i "s/mavlink start \-x \-u \$udp_gcs_port_local -r 4000000/mavlink start -x -u \$udp_gcs_port_local -r 4000000 ${QGC_PARAM}/" ${CONFIG_FILE}
 sed -i "s/mavlink start \-x \-u \$udp_offboard_port_local -r 4000000/mavlink start -x -u \$udp_offboard_port_local -r 4000000 ${API_PARAM}/" ${CONFIG_FILE}
